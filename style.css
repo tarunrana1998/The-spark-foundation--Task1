@@ -1,0 +1,197 @@
+*{
+margin:0;
+padding:0;
+background-image: url("./back.jpg") !important;
+}
+
+header{
+width:100%;
+height:100vh;
+
+background-size:cover;
+font-family:'Dosis',sans-serif;
+}
+.header_menu{
+	width:100%;
+	height:8rem;
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+	background-color:black;
+}
+.logo{
+	width:10%;
+	text-align:center;
+	background-color:white;
+	
+	
+}
+.logo img{
+	height:8rem;
+}
+.menu{
+	width:80%;
+	text-align:right;
+	
+}
+.menu li{
+	text-transform:uppercase;
+	display:inline-block;
+	list-style:none;
+	letter-spacing:0.4rem;
+	padding-left:5rem;
+}
+.menu li a{
+	color:rgba(255,255,255,0.8);
+	text-decoration:none;
+	font-size:2rem;
+}
+.menu li a:hover{
+	color:orange;
+}
+.header_content{
+	text-transform:uppercase;
+	width:100%;
+	height:20rem;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.header_content h2{
+	margin-top:5rem;
+	margin-bottom:4rem;
+	font-size:2.5rem;
+	font-weight:500;
+	letter-spacing:0.03em;
+}
+.header_content h1{
+	margin-bottom:6rem;
+	font-size:2.7rem;
+	font-weight:500;
+	letter-spacing:0.07em;
+	margin-left:6rem;
+}
+.header_content button{
+	height:auto;
+	padding:0.8rem 3.7rem;
+	color:#fff;
+	font-size:1rem;
+	background-color:transparent;
+	margin-right:2rem;
+	
+}
+.header_content button a{
+	text-transform:uppercase;
+	color:blue;
+	letter-spacing:0.1rem;
+	
+}
+.header_content button:hover{
+	background-color:orange;
+	border:0.1rem solid black;
+}
+
+h1{
+	margin-left:15rem;
+	font-size:2rem;
+	text-align:center-left;
+	
+}
+ 
+.about_content h1{
+	margin-top:2rem;
+	margin-left:10rem;
+	margin-bottom:1.5rem;
+	font-size:2rem;
+	letter-spacing:0.01em;
+	font-weight:500;
+}
+.about_content h2{
+	margin-top:2rem;
+	margin-left:10rem;
+	margin-bottom:1.5rem;
+	font-size:2rem;
+	letter-spacing:0.01em;
+	font-weight:500;
+}
+.about_content p{
+	font-size:1.5rem;
+	margin-left:5rem;
+	margin-top:1rem;
+	font-weight:300;
+	
+}
+
+.contact_h h3{
+	margin-left:10rem;
+	margin-top:3rem;
+	margin-bottom:0.5rem;
+	
+
+}
+.contact_content h1{
+	margin-top:1rem;
+	margin-left:1rem;
+}
+
+/*//////Media query///////// */
+/* big landscape*/
+@media(max-width:998px){
+	html{
+		font-size:65%;
+	}
+	
+}
+@media(max-width:768px){
+	html{
+		font-size:55%;
+	}
+	
+	
+}
+
+@media(max-width:480px){
+	html{
+		font-size:45%;
+	}
+	.menu li{
+		padding-left:0.06rem;
+		padding-right:0.4rem;
+		margin-left:1rem;
+	}
+	.logo{
+		width:15%;
+	}
+	.header_content button{
+		margin-left:10%;
+		width:30%;
+		font-size:10px;
+		padding-left:5%;
+		padding-right:5%;
+		
+	}
+	
+}
+@media(max-width:253px){
+	html{
+		font-size:25%;
+	}
+	.menu li{
+		padding-left:0.06rem;
+		padding-right:0.4rem;
+		margin-left:1rem;
+	}
+	.logo{
+		width:15%;
+	}
+	.header_content button{
+		margin-left:10%;
+		width:30%;
+		font-size:8px;
+		padding-left:3%;
+		padding-right:3%;
+		
+	}
+}
